@@ -33,6 +33,8 @@ jobs:
       # 4. Build the book
       #    Output goes to _build/html/
       - name: Build the book
+        env:
+          BASE_URL: "/tutorial-series"
         run: |
           myst build --html 2>&1 | tee build.log
           if [ ! -d "_build/html" ]; then
