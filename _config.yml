@@ -1,0 +1,13 @@
+title: AI for Scientists - FutureHouse tutorial
+
+launch_buttons:
+  notebook_interface: "jupyterlab"
+  colab_url: "https://colab.research.google.com"
+  binderhub_url: ""
+
+bibtex_bibfiles: 
+  - references.bib
+  
+html:
+  extra_css:
+    - custom.css

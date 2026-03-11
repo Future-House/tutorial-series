@@ -1,0 +1,12 @@
+.caption-centered .caption {
+    text-align: center;
+}
+.myst-home-link span {
+    display: none;
+}
+
+.myst-home-link::after {
+    content: "FutureHouse Tutorial Series";
+    font-size: 1.1rem;
+    font-weight: 600;
+}

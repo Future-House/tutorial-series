@@ -1,0 +1,20 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 4cfcd24a-8583-4552-9b2d-d324cb6c168f
+  title: Overview
+  description: This is a collection of tutorials for the FutureHouse Fellowship program. It covers the basics of AI Agents for Science.
+  jupyter: true
+  keywords: [FutureHouse, Fellowship, AI, Agents, Science]
+  #authors: [Geemi Wellawatte, Edison Literature agent]
+  #github: https://github.com/Future-House/FH-Fellows-Tutorials
+  toc: _toc.yml
+  bibliography:
+    - references.bib
+site:
+  template: book-theme
+  title: AI for Scientists - FutureHouse tutorial
+  options:
+    #favicon: favicon.ico
+    #logo: site_logo.png
+    style: custom.css
