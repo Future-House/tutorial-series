@@ -1,5 +1,5 @@
 format: jb-book
-root: index.md
+root: index
 parts:
   
   - caption: "1. Introduction"
@@ -25,4 +25,4 @@ parts:
   - caption: "Resources"
     numbered: true
     chapters:
-       - file: chapter_1/definitions.ipynb
+       - file: chapter_1/definitions.md

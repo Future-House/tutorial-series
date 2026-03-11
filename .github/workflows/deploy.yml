@@ -28,13 +28,13 @@ jobs:
       # 3. Install Jupyter Book and dependencies
       - name: Install dependencies
         run: |
-          pip install jupyter-book sphinx-copybutton
+          pip install mystmd jupyter-book
 
       # 4. Build the book
       #    Output goes to _build/html/
       - name: Build the book
         run: |
-          jupyter-book build . 2>&1 | tee build.log
+          myst build --html 2>&1 | tee build.log
           if [ ! -d "_build/html" ]; then
             echo "❌ Build failed — _build/html was not created"
             cat build.log

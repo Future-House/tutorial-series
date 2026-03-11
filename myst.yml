@@ -1,20 +1,56 @@
-# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
+
 project:
   id: 4cfcd24a-8583-4552-9b2d-d324cb6c168f
-  title: Overview
-  description: This is a collection of tutorials for the FutureHouse Fellowship program. It covers the basics of AI Agents for Science.
-  jupyter: true
+  title: "AI for Scientists - FutureHouse Tutorial"
+  description: "A collection of tutorials for the FutureHouse Fellowship program covering AI Agents for Science."
   keywords: [FutureHouse, Fellowship, AI, Agents, Science]
-  #authors: [Geemi Wellawatte, Edison Literature agent]
-  #github: https://github.com/Future-House/FH-Fellows-Tutorials
-  #toc: [_toc.yml]
+  github: "https://github.com/Future-House/tutorial-series"
+  copyright: "2026 FutureHouse"
+  jupyter: true
+
   bibliography:
     - references.bib
+
+  exclude:
+    - .github/**
+    - "**/.github/**"
+    - .venv/**
+    - "**/.venv/**"
+    - _build/**
+    - .git/**
+    - custom.css
+    - references.bib
+    - "*.yml"
+    - "*.yaml"
+
+  toc:
+    - file: index.md
+
+    - title: "1. Introduction"
+      children:
+        - file: chapter_1/background.md
+        - file: chapter_1/models_in_ai.md
+        - file: chapter_1/LLMs_for_biology.md
+        - file: chapter_1/definitions.md
+
+    - title: "2. Applications of AI in Biology"
+      children:
+        - file: chapter_2/background.md
+        - file: chapter_2/llms_for_biology.ipynb
+        - file: chapter_2/uniprot_example.ipynb
+
+    - title: "3. LLM Agents"
+      children:
+        - file: chapter_3/agents.md
+        - file: chapter_3/agent_implementation.ipynb
+
 site:
   template: book-theme
-  title: AI for Scientists - FutureHouse tutorial
+  title: "AI for Scientists - FutureHouse Tutorial"
   options:
-    #favicon: favicon.ico
-    #logo: site_logo.png
+    logo_text: "AI for Scientists"
     style: custom.css
+    use_repository_button: true
+    launch_buttons:
+      colab: true
