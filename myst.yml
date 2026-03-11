@@ -8,7 +8,7 @@ project:
   keywords: [FutureHouse, Fellowship, AI, Agents, Science]
   #authors: [Geemi Wellawatte, Edison Literature agent]
   #github: https://github.com/Future-House/FH-Fellows-Tutorials
-  toc: _toc.yml
+  #toc: [_toc.yml]
   bibliography:
     - references.bib
 site:

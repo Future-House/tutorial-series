@@ -49,3 +49,7 @@ MANIFEST
 *.spec
 
 .vscode/
+
+# MyST build outputs
+_build/
+
