@@ -8,7 +8,10 @@ project:
   github: "https://github.com/Future-House/tutorial-series"
   copyright: "2026 FutureHouse"
   jupyter: true
-
+  #numbering: 
+  #  title: true
+  #  headings: true
+ 
   bibliography:
     - references.bib
 
