@@ -30,7 +30,13 @@ jobs:
 
       - name: Build the book
         run: |
-          jupyter-book build . --verbose
+          jupyter-book build . -v 2>&1 | tee build.log
+          if [ ! -d "_build/html" ]; then
+            echo "❌ Build failed — _build/html was not created"
+            cat build.log
+            exit 1
+          fi
+
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
