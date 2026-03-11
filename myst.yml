@@ -48,6 +48,8 @@ project:
 site:
   template: book-theme
   title: "AI for Scientists - FutureHouse Tutorial"
+  url: "https://future-house.github.io"
+  baseurl: "/tutorial-series"
   options:
     logo_text: "AI for Scientists"
     style: custom.css
