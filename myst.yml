@@ -52,5 +52,6 @@ site:
     logo_text: "AI for Scientists"
     style: custom.css
     use_repository_button: true
-    launch_buttons:
-      colab: true
+  nav:
+    - title: "▶ Open in Colab"
+      url: "https://colab.research.google.com/github/Future-House/tutorial-series/blob/main/chapter_1/background.md"
