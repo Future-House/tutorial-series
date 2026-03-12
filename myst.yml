@@ -35,7 +35,6 @@ project:
         - file: chapter_1/background.md
         - file: chapter_1/models_in_ai.md
         - file: chapter_1/LLMs_for_biology.md
-        - file: chapter_1/definitions.md
 
     - title: "2. Applications of AI in Biology"
       children:
