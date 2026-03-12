@@ -1,16 +1,14 @@
 # AI for Science: Tutorial Series
 
-# Objectives
+The goal of this tutorial series is to help scientists use AI as a practical tool for accelerating discovery. AI is already transforming biology—from predicting protein structures to analyzing single-cell data and designing new molecules—but many scientists still see it as overly technical or limited to computational specialists.
 
-The goal of this tutorial series is simple: to break the barrier between scientists and AI so we can accelerate scientific discovery. AI is already reshaping biology from predicting protein structures to analyzing single-cell data to designing new molecules. But for many scientists, AI still feels intimidating, overly technical, or like something meant for ``the computational people." That gap slows us down.
+This course aims to close that gap by helping you become comfortable with AI: what it is, how it works at a conceptual level, and how it can support your research.
 
-This course is about closing that gap. The goal is to help you become comfortable with AI — to understand what it is, how it works at a conceptual level, and how to use it as part of your research toolkit.
+Rather than treating AI as a mysterious black box, we will approach it as a set of statistical tools built on assumptions and data. With a basic understanding, you can evaluate AI methods, question their outputs, and apply them thoughtfully in scientific work.
 
-AI should feel like a tool you can reach for when it’s useful — not a mysterious black box. It’s a set of methods built on statistics, assumptions, and data. To use it well, you need enough understanding to question it, evaluate it, and apply it thoughtfully.
+# Target Audience
 
-When used well, AI can help you move faster, test ideas more efficiently, and focus your creativity where it matters most.
-
-This course is designed to give scientists from non-computational fields a principled, practical understanding of AI. Throughout this course we will learn about basics in AI, how to use large language models for scientific discovery, and about using AI agents to automate scientific workflows along with interactive, biology focused examples. 
+The course is designed for scientists from non-computational backgrounds and focuses on practical use. We will cover core AI concepts, using large language models for scientific discovery, and how AI agents can help automate scientific workflows through interactive, biology-focused examples.
 
 # What You Should Expect to Gain
 
