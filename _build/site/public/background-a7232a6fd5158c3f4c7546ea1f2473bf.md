@@ -1,1 +1,0 @@
-# Background: Applications of AI
