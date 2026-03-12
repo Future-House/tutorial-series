@@ -48,7 +48,7 @@ project:
         - file: chapter_3/agents.md
         - file: chapter_3/agent_implementation.ipynb
         
-    - title: "4. AI Agents for Biology"
+    - title: "4. Resources"
       children:
         - file: chapter_1/definitions.md
 
