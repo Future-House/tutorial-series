@@ -27,7 +27,7 @@ In more detail, the modern idea of AI agents connect closely with **reinforcemen
 
 In accepted modern practice RL provides the mathematical formulation to the AI agents that we will be using.
 
-## Definitions based on RL formulation
+# 3.1.2 Definitions based on RL formulation
 
 **Agents:**
 

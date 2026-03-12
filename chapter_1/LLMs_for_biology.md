@@ -8,7 +8,7 @@ Recent advances in **model architectures**, **large-scale datasets**, and **comp
 
 --- 
 
-# Transformers: The Architecture Behind Modern LLMs
+# 1.3.1 Transformers: The Architecture Behind Modern LLMs
 
 Most modern natural language models including those in biology—are built using a neural network architecture called the "transformer" [@Vaswani].
 
@@ -32,7 +32,7 @@ Figure 1.3.1: Attention mechanism in Transformers allow the model to learn relat
 
 ---
 
-# Training Language Models
+# 1.3.2 Training Language Models
 
 Language models are typically trained using a strategy known as [self-supervised learning](https://www.ibm.com/think/topics/self-supervised-learning). Training and LLM is less like "teaching a chatbot facts" and more like building a *very large*, *very flexible* pattern-recognizer, then gradually steering it toward helpful behaviors. 
 
@@ -99,7 +99,7 @@ This process helps align the model’s behavior with human expectations and impr
 
 ---
 
-# Examples of foundational models in biology
+# 1.3.3 Examples of foundational models in biology
 
 The table below provides a comparative overview of several major foundation models used in biological research.
 
@@ -121,7 +121,7 @@ The table below provides a comparative overview of several major foundation mode
 
 --- 
 
-# Additional Reading
+# 1.3.4 Additional Reading
 
 - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter0/1):  *Highly recommended! A great resource for getting started on LLMs*
 - [Databricks blog post on LLM pre-training](https://www.databricks.com/blog/llm-pre-training-and-custom-llms)

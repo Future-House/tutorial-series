@@ -1,7 +1,7 @@
 # 1.2 An Overview of AI Models
 
 
-# First things first, what is a "model"?
+# 1.2.1 First things first, what is a "model"?
 
 An model is simply an algorithm (a function) that has been trained on data in order to recognize patterns and make predictions. The data used to train a model typically consists of examples. Each example may contain:
 
@@ -30,7 +30,7 @@ It is also useful to distinguish between **supervised** and **self-supervised** 
 
 You may refer to Andrew White's [Deep Learning for Molecules & Materials](https://dmol.pub/index.html#)[@white2021deep] for an in-depth overview on machine learning. 
 
-# Relationship between AI, ML, DL and GenAI
+# 1.2.2 Relationship between AI, ML, DL and GenAI
 
 ```{figure} ../figures/Ai_categories.png
 :alt: ai_cats
@@ -48,7 +48,7 @@ Figure 1.2.1: AI is a super class of learning algorithms which encompases ML, DL
 
 - **Generative AI (GenAI):** A type of deep learning model designed to generate new content (e.g., text, images, proteins) by learning patterns from large datasets.
 
-# An overview on the models we see in science
+# 1.2.3 An overview on the models we see in science
 
 Not only AI model but computational models are foundational to modern biology and science, spanning a continuum from first-principles physics-based simulations to data-driven machine learning. Let's take a look at the major categories of AI and computational models encountered in biological research. 
 
@@ -79,7 +79,7 @@ Not only AI model but computational models are foundational to modern biology an
 ---
 
 
-# Additional materials
+# 1.2.4 Additional materials
 
 - [Deep Learning for Molecules & Materials](https://dmol.pub/index.html#)
 - [IBM's primer on AI models](https://www.ibm.com/think/topics/ai-model)

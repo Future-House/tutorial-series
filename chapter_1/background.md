@@ -10,7 +10,7 @@ In this course, we’ll start by building a foundation. We’ll begin with the h
 
 From there, we’ll shift toward practical applications of modern AI in biology, especially large language models (LLMs). We’ll explore how these tools can be used in everyday scientific workflows, with a particular focus on biological research. The goal is to move beyond the hype and understand how AI can actually help scientists ask better questions, analyze data, and accelerate discovery.
 
-# History of AI
+# 1.1.1 History of AI
 
 ```{figure} ../figures/history_timeline.png
 :alt: Evolution of AI
@@ -32,7 +32,7 @@ Support Vector Machines (SVMs) emerged as one of the first widely used algorithm
 
 **2020s - Generative AI and Foundation Models:** If the 2010s were about learning powerful representations, the 2020s became about learning general-purpose models. The key technical breakthrough that made this possible was the transformer architecture, introduced in 2017 [@Vaswani]. Unlike earlier sequence models such as; RNNs [@rumelhart1986learning], LSTMs [@hochreiter1997long], transformers relied on a mechanism called attention, which allowed models to weigh relationships between all parts of an input at once. This made them dramatically better at modeling long-range dependencies in language, code, and even biological sequences. Just as importantly, transformers scaled extremely well. As researchers increased model size, dataset size, and compute, performance improved in a surprisingly smooth and predictable way. This "scaling behavior" made it feasible to train very large models on massive datasets. Instead of training a separate model for each problem, researchers began pretraining large transformer models on vast corpora (text from the internet, millions of protein sequences, genomic data) and then adapting them to specific tasks through fine-tuning or prompting. These became known as foundation models. In natural language, this led to large language models capable of reasoning, summarizing, coding, and assisting with scientific writing.
 
-# AI in Science: From Data Overload to Discovery
+# 1.1.2 AI in Science: From Data Overload to Discovery
 
 Modern biology (science in general) is overflowing with data. We can sequence genomes at scale. We can measure gene expression in millions of single cells. We can generate high-content imaging datasets that capture cellular morphology in extraordinary detail. But there’s a catch: biological data is messy, high-dimensional, and often incomplete.
 
@@ -57,7 +57,7 @@ Zooming out, what’s happening in biology reflects a broader shift across the s
 
 AI has proven capable of extracting intricate patterns from large datasets in genomics, drug discovery, imaging, and beyond. The same methods that power image recognition and speech systems are now being adapted to understand genomes, proteins, and cellular systems.
 
-# Additional materials
+# 1.1.3 Additional materials
 - Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017).
 
 - Kaplan, Jared, et al. "Scaling laws for neural language models." arXiv preprint arXiv:2001.08361 (2020).
