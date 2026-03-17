@@ -47,13 +47,16 @@ The first two stages of training are known as **pre-training** and **fine-tuning
 Figure 1.3.2: Training an LLM is a multi-step process: pre-training, fine-tuning, and RLHF. These steps allow large language models to first learn general patterns from massive datasets and then become more specialized and aligned with human expectations. (Created with gemini-3.1-flash-image-preview)
 ```
 
-Together, these stages—pre-training, fine-tuning, and RLHF allow large language models to first learn general patterns from massive datasets and then become more specialized and aligned with human expectations.
+Together, pre-training, fine-tuning, and RLHF allow large language models to first learn general patterns from massive datasets and then become more specialized and aligned with human expectations.
 
 ## Pre-training
 
-Pre-training is the first stage in training a language model. During this stage, the model is trained on very large collections of sequences. These sequences can be natural language, protein sequences, DNA sequences, or other structured data. For example, if a foundation model is trained only on protein sequences, it is often referred to as a Protein Language Model (PLM). 
+Pre-training is the first stage in training a language model. During this stage, the model is trained on very large collections of sequences. These sequences can be natural language (i.e. sequences of words), protein sequences (i.e. sequences of amino acids), DNA sequences (i.e. sequences of nucleotides), or other structured data. 
 
-Here, the model learns general statistical patterns present in the data. Because pre-training does not require manually labeled data, it is possible to train models on extremely large datasets.
+For example, if a foundation model is trained only on protein sequences, it is often referred to as a Protein Language Model (PLM). 
+
+Here, the model learns general statistical patterns present in the data. Think of these patterns as if a model learning "rules in biology". The goal is to predict the next token (next amino acid, next nucleotide etc.) given a prior sequence. One advantage of pre-training is that it does not require manually labeled data. So it is possible to train models on extremely large datasets.
+
 
 As pre-training is typically performed using self-supervised learning, the model learns by solving "prediction tasks" that are automatically derived from the data itself. These prediction tasks are known as **training objectives**. The objective defines what the model is asked to predict and provides the learning signal used to update the model’s parameters.
 
@@ -68,10 +71,14 @@ For example if you're working with an amino acid sequence, the model learns to p
 ```
 M A D K T L E V K → ?
 ```
+:::{tip}
+Read more on tokens [here](https://nebius.com/blog/posts/what-is-token-in-ai).
+:::
+
 
 **2) Masked token prediction**
 
-Another common objective is masked token prediction, also known as masked language modeling. In this approach, some tokens in the sequence are randomly hidden, and the model must predict the missing elements using the surrounding context [@devlin2019bertpretrainingof].
+Another common objective is *masked token prediction*, also known as masked language modeling. In this approach, some tokens in the sequence are randomly hidden, and the model must predict the missing elements using the surrounding context [@devlin2019bertpretrainingof].
 
 Here the model must infer the missing amino acid in the given sequence.
 ```
@@ -85,7 +92,7 @@ By performing this task across millions or billions of sequences, the model grad
 ## Fine-tuning
 After pre-training, language models can be adapted to specific tasks through a process known as fine-tuning. During fine-tuning, the pre-trained model is further trained on a smaller, task-specific dataset. Unlike pre-training, these datasets often contain labeled examples, where the correct output for each input is known [@luo2022biogpt;@gu2021domain].
 
-The purpose of this step is to teach the model to specialize in particular applications while retaining the general knowledge it learned during pre-training. For example, a protein language model that has been pre-trained on millions of protein sequences can be fine-tuned to perform tasks such as predicting protein function, identifying structural features, or estimating the effects of mutations.
+The purpose of this step is to teach the model to specialize in particular applications while retaining the model. In other words, we're re-training the models for a specialized application. For example, a protein language model that has been pre-trained on millions of protein sequences can be fine-tuned to perform tasks such as predicting protein function, identifying structural features, or estimating the effects of mutations.
 
 Because the model already learned general patterns during pre-training, fine-tuning typically requires much less data and compute than training a model from scratch.
 
@@ -103,7 +110,7 @@ This process helps align the model’s behavior with human expectations and impr
 
 The table below provides a comparative overview of several major foundation models used in biological research.
 
-```{table} Table 1.3.1: Example of foundation models in biology
+```{table} Table 1.3.1: Example of foundation models in biology (Last updated: March 2026).
 | Model Name | Type | Architecture | Key Application | Scale / Data |
 | :--- | :--- | :--- | :--- | :--- |
 | **ESM-2** | Protein | Transformer Encoder (BERT-style) | Structure prediction, variant effect prediction, representation learning | Up to 15B parameters; trained on ~65M UniRef sequences (pqac-00000032, pqac-00000034, pqac-00000039) |

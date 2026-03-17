@@ -34,12 +34,12 @@ Support Vector Machines (SVMs) emerged as one of the first widely used algorithm
 
 # 1.1.2 AI in Science: From Data Overload to Discovery
 
-Modern biology (science in general) is overflowing with data. We can sequence genomes at scale. We can measure gene expression in millions of single cells. We can generate high-content imaging datasets that capture cellular morphology in extraordinary detail. But there’s a catch: biological data is messy, high-dimensional, and often incomplete.
+Modern biology (science in general) is overflowing with data. We can sequence genomes at scale. We can measure gene expression in millions of single cells. We can generate high-content imaging datasets that capture cellular morphology in extraordinary detail. But there’s a catch: biological data is messy, high-dimensional, and often incomplete [@ruffolo2024designing;@ovchinnikov2017protein].
 
-Many assays are destructive. Some measurements can’t be taken on the same cell. Others can’t be measured simultaneously at all. Time-series experiments are expensive. Perturbations are constrained. In practice, we observe fragments of a much larger biological system [@uhler2022machinelearningapproaches].
+Many assays are destructive. Some measurements can’t be taken on the same cell. Others can’t be measured simultaneously at all [@bialek2005physical;@ten2016fundamental]. Time-series experiments are expensive. Perturbations are constrained. In practice, we observe fragments of a much larger biological system [@uhler2022machinelearningapproaches].
 So the challenge isn’t just generating data anymore, it’s stitching it together.
 
-This is where AI has become essential. Machine learning methods like representation learning, generative modeling, and optimal transport allow us to integrate different data modalities, align measurements across conditions, and build models that infer what we cannot directly measure.  In this sense, AI isn’t just analyzing biology. It’s filling in the missing pieces.
+This is where AI has become essential. Machine learning methods like representation learning, generative modeling, and optimal transport allow us to integrate different data modalities, align measurements across conditions, and build models that infer what we cannot directly measure.  In this sense, AI isn’t just analyzing biology. It’s filling in the missing pieces. 
 
 ```{figure} ../figures/41586_2021_3819_Fig1_HTML.webp
 :alt: AlphaFold
@@ -61,6 +61,8 @@ AI has proven capable of extracting intricate patterns from large datasets in ge
 - Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017).
 
 - Kaplan, Jared, et al. "Scaling laws for neural language models." arXiv preprint arXiv:2001.08361 (2020).
+
+- Chapter 4.1: AI glossary for more definitions.
 
 - [The future of chemistry is language](https://www.nature.com/articles/s41570-023-00502-0)
 

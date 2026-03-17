@@ -6,7 +6,7 @@
 }
 
 .myst-home-link::after {
-    content: "FutureHouse AI4Science Tutorial Series";
+    content: "Practical AI for Scientists";
     font-size: 1.1rem;
     font-weight: 600;
 }

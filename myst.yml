@@ -49,11 +49,11 @@ project:
         
     - title: "4. Resources"
       children:
-        - file: chapter_1/definitions.md
+        - file: resources/glossary.md
 
 site:
   template: book-theme
-  title: "AI for Scientists - FutureHouse Tutorial"
+  title: "Practical AI for Scientists - FutureHouse Tutorial"
   options:
     logo_text: "AI for Scientists"
     style: custom.css

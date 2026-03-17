@@ -1,4 +1,4 @@
-# AI for Science: Tutorial Series
+# Practical AI for Scientists: Tutorial Series
 
 The goal of this tutorial series is to help scientists use AI as a practical tool for accelerating discovery. AI is already transforming biology—from predicting protein structures to analyzing single-cell data and designing new molecules—but many scientists still see it as overly technical or limited to computational specialists.
 
@@ -19,7 +19,7 @@ By the end of this series, you should:
 - See clear opportunities to integrate AI into your own workflow
 - Implement AI tools/agents on your own!
 
-# prerequisites
+# Prerequisites
 
 - A curious mind
 - Minimal to almost no background in Python programming
