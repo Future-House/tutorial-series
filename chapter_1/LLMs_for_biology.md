@@ -2,7 +2,7 @@
 
 Many modern AI models used in biology are sequence-based language models. These models can also be considered foundation models, as they are trained on very large datasets and can be adapted to a wide range of downstream biological tasks.
 
-While language models were originally developed for natural language processing, the same approaches can be applied to biological sequences such as proteins, DNA, and RNA. In this setting, sequences of amino acids or nucleotides are treated similarly to sequences of words in a sentence, allowing models to learn patterns and relationships within biological data.
+While language models were originally developed for natural language processing, the same approaches can be applied to biological sequences such as DNA, RNA, and proteins. In this setting, sequences of amino acids or nucleotides are treated similarly to sequences of words in a sentence, allowing models to learn patterns and relationships within biological data.
 
 Recent advances in **model architectures**, **large-scale datasets**, and **computing hardware** have significantly accelerated the application of AI methods in biology and enabled researchers to train large models capable of capturing complex biological signals from sequence data.
 
@@ -10,7 +10,7 @@ Recent advances in **model architectures**, **large-scale datasets**, and **comp
 
 # 1.3.1 Transformers: The Architecture Behind Modern LLMs
 
-Most modern natural language models including those in biology—are built using a neural network architecture called the "transformer" [@Vaswani].
+Most modern natural language models, including those in biology, are built using a neural network architecture called the "transformer" [@Vaswani].
 
 Before transformers, many sequence models relied on architectures such as recurrent neural networks (RNNs) [@rumelhart1986learning] that processed sequences one element at a time. While effective, these models struggled to capture long-range relationships within sequences.
 
@@ -27,16 +27,16 @@ Because transformers process sequences in parallel and capture long-range depend
 :align: center
 :figclass: caption-centered
 
-Figure 1.3.1: Attention mechanism in Transformers allow the model to learn relationships between amino acids that are far apart. (Created with gemini-3.1-flash-image-preview)
+Figure 1.3.1: Attention mechanism in transformers allow the model to learn relationships between amino acids that are far apart. (Created with gemini-3.1-flash-image-preview)
 ```
 
 ---
 
 # 1.3.2 Training Language Models
 
-Language models are typically trained using a strategy known as [self-supervised learning](https://www.ibm.com/think/topics/self-supervised-learning). Training and LLM is less like "teaching a chatbot facts" and more like building a *very large*, *very flexible* pattern-recognizer, then gradually steering it toward helpful behaviors. 
+Language models are typically trained using a strategy known as [self-supervised learning](https://www.ibm.com/think/topics/self-supervised-learning). Training an LLM is less like "teaching a chatbot facts" and more like building a *very large*, *very flexible* pattern-recognizer, then gradually steering it toward helpful behaviors. 
 
-The first two stages of training are known as **pre-training** and **fine-tuning**. For conversational language models, an additional step called **Reinforcement Learning from Human Feedback (RLHF)** is often used. 
+The first stages of training are known as **pre-training** and **fine-tuning**. For conversational language models, an additional step called **Reinforcement Learning from Human Feedback (RLHF)** is often used. 
 
 
 ```{figure} ../figures/steps_training.png
@@ -47,7 +47,7 @@ The first two stages of training are known as **pre-training** and **fine-tuning
 Figure 1.3.2: Training an LLM is a multi-step process: pre-training, fine-tuning, and RLHF. These steps allow large language models to first learn general patterns from massive datasets and then become more specialized and aligned with human expectations. (Created with gemini-3.1-flash-image-preview)
 ```
 
-Together, pre-training, fine-tuning, and RLHF allow large language models to first learn general patterns from massive datasets and then become more specialized and aligned with human expectations.
+Together, pre-training, fine-tuning, and RLHF allow LLMs to first learn general patterns from massive datasets and then become more specialized and aligned with human expectations.
 
 ## Pre-training
 
@@ -55,7 +55,7 @@ Pre-training is the first stage in training a language model. During this stage,
 
 For example, if a foundation model is trained only on protein sequences, it is often referred to as a Protein Language Model (PLM). 
 
-Here, the model learns general statistical patterns present in the data. Think of these patterns as if a model learning "rules in biology". The goal is to predict the next token (next amino acid, next nucleotide etc.) given a prior sequence. One advantage of pre-training is that it does not require manually labeled data. So it is possible to train models on extremely large datasets.
+Here, the model learns general statistical patterns present in the data. Think of these patterns as a model learning the "rules in biology". The goal is to predict the next token (next amino acid, next nucleotide etc.) given a prior sequence. One advantage of pre-training is that it does not require manually labeled data. So it is possible to train models on extremely large datasets.
 
 
 As pre-training is typically performed using self-supervised learning, the model learns by solving "prediction tasks" that are automatically derived from the data itself. These prediction tasks are known as **training objectives**. The objective defines what the model is asked to predict and provides the learning signal used to update the model’s parameters.
@@ -143,4 +143,4 @@ The table below provides a comparative overview of several major foundation mode
 
 - [Attention mechanism in transformers](https://www.youtube.com/watch?v=eMlx5fFNoYc)
 
--  [7 AI Terms You Need to Know](https://www.youtube.com/watch?v=VSFuqMh4hus)
+- [7 AI Terms You Need to Know](https://www.youtube.com/watch?v=VSFuqMh4hus)
