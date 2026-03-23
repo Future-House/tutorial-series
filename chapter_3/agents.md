@@ -3,7 +3,7 @@
 # 3.1.1 Overview
 In the previous chapters we saw that with LLMs we can automate many research workflows. At first glance this is pretty amazing, mindblowing in fact. But is this enough? 
 
-The limitation with LLMs is that while they can provide responses (ie. "think") they cannot "act". For example you can ask ChatGPT "What are common tumor suppressing proteins in humans?". LLM will use its internal knowledge and provide an answer. 
+The limitation with LLMs is that while they can provide responses (ie. "think") they cannot "act". For example you can ask ChatGPT "What are common tumor suppressing proteins in humans?". The LLM will use its internal knowledge and provide an answer. 
 
 But it can't take any actions beyond that. For example if you ask "Can you provide literature publications to support your answer?" it can't go to Google Scholar and find papers for you.
 
@@ -13,17 +13,17 @@ This is where AI agents come into play. Agents are **autonomous systems** which 
 > Agents = LLM + Tools
 
 **Here are some example use cases of AI agents in science**
-- Literature search - see section 2.2 for an example implementation
+- Searching the literature - see section 2.2 for an example implementation
 
 - Automating data analysis
 
-- Hypothesis generation
+- Generating hypotheses
 
 - Evaluating models/agents
 
-- Write technical reports
+- Writing technical reports
 
-In more detail, the modern idea of AI agents connect closely with **reinforcement learning (RL)** but it actually runs deeper than that. Read more on *cybernetics* and *classical AI* if you're interested.
+In more detail, the modern idea of AI agents connects closely with **reinforcement learning (RL)** but it actually runs deeper than that. Read more on *cybernetics* and *classical AI* if you're interested.
 
 In accepted modern practice RL provides the mathematical formulation to the AI agents that we will be using.
 
@@ -58,7 +58,7 @@ The state is a snapshot of the agent’s current situation. ie. what the agent k
 
 **Tools**
 
-Agents use tools to improve its performance. Think of tools as **resources or specialized skills** the agent can call on. For example, an AI agent answering biology questions might use a database of research papers as a tool. A robot might have a microscope or a pipette as physical tools. In software, tools might be APIs, calculators, or data analysis modules.
+An agent uses tools to improve its performance. Think of tools as **resources or specialized skills** the agent can call on. For example, an AI agent answering biology questions might use a database of research papers as a tool. A robot might have a microscope or a pipette as a physical tool. In software, tools might be APIs, calculators, or data analysis modules.
 
 
 In the following sections let's see how to deploy an agent 
