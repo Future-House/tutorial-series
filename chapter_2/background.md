@@ -4,7 +4,7 @@ This chapter focuses on **practical applications** of AI in biological research.
 
 These examples illustrate how large language models and related AI systems can accelerate tasks such as analyzing datasets, extracting information from scientific literature, and building intelligent research assistants.
 
-Through these examples, readers will learn how to use AI to:
+These examples will teach you how to build AI systems that:
 
 - Query and summarize scientific literature
 

@@ -3,7 +3,7 @@
 
 # 1.2.1 First things first, what is a "model"?
 
-An model is simply an algorithm (a function) that has been trained on data in order to recognize patterns and make predictions. The data used to train a model typically consists of examples. Each example may contain:
+A model is simply an algorithm (a function) that has been trained on data in order to recognize patterns and make predictions. The data used to train a model typically consists of examples. Each example may contain:
 
 - an **input** (e.g., a protein sequence, microscopy image, gene expression profile)
 
@@ -19,7 +19,7 @@ A *Model* is a specific algorithm applied to a dataset.
 :::
 
 During training, the **model** examines many such examples and gradually learns statistical relationships between the inputs and outputs. 
-Once trained, the model can then be used to make predictions on new data it has never seen before. For instance, it might predict the function of a newly discovered protein or identify structures in a microscopy image.
+Once trained, the model can be used to make predictions on new data it has never seen before. For instance, it might predict the function of a newly discovered protein or identify structures in a microscopy image.
 
 
 It is also useful to distinguish between **supervised** and **self-supervised** training approaches.
@@ -50,7 +50,7 @@ Figure 1.2.1: AI is a super class of learning algorithms which encompases ML, DL
 
 # 1.2.3 An overview on the models we see in science
 
-Not only AI model but computational models are foundational to modern biology and science, spanning a continuum from first-principles physics-based simulations to data-driven machine learning. Let's take a look at the major categories of AI and computational models encountered in biological research. 
+AI models and computational models are foundational to modern biology and science, spanning a continuum from first-principles physics-based simulations to data-driven machine learning. Let's take a look at the major categories of AI and computational models encountered in biological research. 
 
 - **Physics-Based Models:** encode known physical laws, conservation principles, and mechanistic understanding directly into mathematical formulations. The oldest class of computational models. eg: Ordinary and Partial Differential Equations (ODEs/PDEs), Molecular dynamics
 
