@@ -9,6 +9,14 @@ But it can't take any actions beyond that. For example if you ask "Can you provi
 
 This is where AI agents come into play. Agents are **autonomous systems** which are simply LLMs integrated with external **tools**. Tools are added functionalities such as a calculator, web-surfing, etc.  
 
+```{figure} ../figures/agent_definition.png
+:alt: ai agent
+:align: center
+:figclass: caption-centered
+
+Figure 3.1.1: The Anatomy of an LLM Agent. The LLM works here as the main "decision maker". Invoking the tools enables the LLM to have improved/specialized skills.  
+```
+
 >[!Tip]
 > Agents = LLM + Tools
 
