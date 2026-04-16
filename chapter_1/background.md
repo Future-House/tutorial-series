@@ -1,10 +1,10 @@
 # 1.1 Why AI?
 
-***This page provides  background literature on AI. You may skip to Chapter 2 or Chapter 3 to see more hands-on applications.***
+***This page provides background on AI. You may skip to Chapter 2 or Chapter 3 to see more hands-on applications.***
 
-From genome sequencing to single-cell transcriptomics to high-content imaging and protein structure prediction, modern biology generates data at a scale and complexity that exceeds traditional analytical approaches. Artificial intelligence (AI)has emerged as a powerful set of tools for extracting patterns, generating hypotheses, and accelerating discovery from biological data. 
+From genome sequencing to single-cell transcriptomics to high-content imaging and protein structure prediction, modern biology generates data at a scale and complexity that exceeds traditional analytical approaches. Artificial intelligence (AI) has emerged as a powerful set of tools for extracting patterns, generating hypotheses, and accelerating discovery from biological data. 
 
-While AI can feel like black magic it is only a collection of statistical principles, mathematical models, and computational tools. These must be understood, applied and evaluated carefully, especially in high-stakes scientific contexts.
+While AI can feel like magic, it is only a collection of statistical principles, mathematical models, and computational tools. These must be understood, applied and evaluated carefully, especially in high-stakes scientific contexts.
 
 We’ll begin with the history and basic ideas behind AI—how the field started, how it evolved, and the key concepts that shape modern systems today. Understanding this background helps demystify AI and gives us the tools to think critically about how these systems work.
 
