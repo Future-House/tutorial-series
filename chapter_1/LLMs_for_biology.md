@@ -1,10 +1,10 @@
 # 1.3 Large Language Models In Biology
 
-Many modern AI models used in biology are sequence-based language models. These models can also be considered foundation models, as they are trained on very large datasets and can be adapted to a wide range of downstream biological tasks.
+Language models are systems designed to work with human language by learning patterns from lots of text. In simple terms, they try to predict what comes next in a sentence, which lets them do things like finish your sentences, answer questions, translate text, or write entire paragraphs. They are trained on large datasets and they learn grammar, meaning, and even bits of general knowledge through training. Instead of following strict rules, they rely on patterns they’ve seen before, which makes them flexible and surprisingly good at handling all kinds of language tasks.
 
-While language models were originally developed for natural language processing, the same approaches can be applied to biological sequences such as DNA, RNA, and proteins. In this setting, sequences of amino acids or nucleotides are treated similarly to sequences of words in a sentence, allowing models to learn patterns and relationships within biological data.
+Language models were originally developed for natural language processing, but the same principles can be applied to biological sequences such as DNA, RNA, and proteins. In this setting, sequences of amino acids or nucleotides are treated similarly to sequences of words in a sentence, allowing models to learn patterns and relationships within biological data.
 
-Recent advances in **model architectures**, **large-scale datasets**, and **computing hardware** have significantly accelerated the application of AI methods in biology and enabled researchers to train large models capable of capturing complex biological signals from sequence data.
+Many modern AI models used in biology such as AlphaFold [@nussinov2022alphafoldartificialintelligence] and ESM2 [@lin2023evolutionaryscalepredictionof] are sequence-based language models. These models can also be considered foundation models, as they are trained on very large datasets and can be adapted to a wide range of downstream biological tasks. 
 
 --- 
 
@@ -51,9 +51,7 @@ Together, pre-training, fine-tuning, and RLHF allow LLMs to first learn general 
 
 ## Pre-training
 
-Pre-training is the first stage in training a language model. During this stage, the model is trained on very large collections of sequences. These sequences can be natural language (i.e. sequences of words), protein sequences (i.e. sequences of amino acids), DNA sequences (i.e. sequences of nucleotides), or other structured data. 
-
-For example, if a foundation model is trained only on protein sequences, it is often referred to as a Protein Language Model (PLM). 
+Pre-training is the first stage in training a language model. During this stage, the model is trained on very large collections of sequences. These sequences can be natural language (i.e. sequences of words), protein sequences (i.e. sequences of amino acids), DNA sequences (i.e. sequences of nucleotides), or other sequential data.  A foundation model trained only on protein sequences is known as a Protein Language Model (PLM). 
 
 Here, the model learns general statistical patterns present in the data. Think of these patterns as a model learning the "rules in biology". The goal is to predict the next token (next amino acid, next nucleotide etc.) given a prior sequence. One advantage of pre-training is that it does not require manually labeled data. So it is possible to train models on extremely large datasets.
 
@@ -64,21 +62,17 @@ Two common training objectives are used in language models.
 
 **1) Next-token prediction**
 
-Here, the model learns to predict the next element in a sequence given the elements that come before it. During training, the model repeatedly observes partial sequences and attempts to predict the next token.
+Here, the model learns to predict the next token (element) in a sequence given the elements that come before it. During training, the model repeatedly observes partial sequences and attempts to predict the next token.
 
-For example if you're working with an amino acid sequence, the model learns to predict the next amino acid.
+For example if you're working with an amino acid sequence, the model learns to predict the next amino acid. Read more on tokens [here](https://nebius.com/blog/posts/what-is-token-in-ai).
 
 ```
 M A D K T L E V K → ?
 ```
-:::{tip}
-Read more on tokens [here](https://nebius.com/blog/posts/what-is-token-in-ai).
-:::
-
 
 **2) Masked token prediction**
 
-Another common objective is *masked token prediction*, also known as masked language modeling. In this approach, some tokens in the sequence are randomly hidden, and the model must predict the missing elements using the surrounding context [@devlin2019bertpretrainingof].
+Another common objective is *masked token prediction*, also known as masked language modeling. In this approach, some tokens in the sequence are randomly hidden, and the model must predict the missing elements using the surrounding context [@devlin2019bertpretrainingof]. This objective is commonly used in autoregressive language models, such as GPT-style models.
 
 Here the model must infer the missing amino acid in the given sequence.
 ```
@@ -87,14 +81,13 @@ M A D [MASK] T L E V K
 Correct prediction: K
 ```
 
-By performing this task across millions or billions of sequences, the model gradually learns patterns in the data. In natural language, this includes grammar and semantic relationships between words. In biological sequences, the model may learn signals related to protein structure, evolutionary constraints, and functional motifs [@gu2021domain]. This objective is commonly used in autoregressive language models, such as GPT-style models.
+By training the model to predict either the next or the masked token of millions or billions of sequences, the model gradually learns "patterns" in the sequences. In natural language, this includes grammar and semantic relationships between words. In biological sequences, the model learns signals related to protein structure, evolutionary constraints, and functional motifs [@gu2021domain] based on the training data. 
 
 ## Fine-tuning
 After pre-training, language models can be adapted to specific tasks through a process known as fine-tuning. During fine-tuning, the pre-trained model is further trained on a smaller, task-specific dataset. Unlike pre-training, these datasets often contain labeled examples, where the correct output for each input is known [@luo2022biogpt;@gu2021domain].
 
-The purpose of this step is to teach the model to specialize in particular applications while retaining the model. In other words, we're re-training the models for a specialized application. For example, a protein language model that has been pre-trained on millions of protein sequences can be fine-tuned to perform tasks such as predicting protein function, identifying structural features, or estimating the effects of mutations.
+The purpose of this step is to teach the model to specialize in particular applications while retaining the model. For example, a protein language model that has been pre-trained on millions of protein sequences can be fine-tuned to perform tasks such as predicting protein function, identifying binding sites, or estimating the effects of mutations. Compared to pre-training, fine-tuning typically requires much less data and compute.
 
-Because the model already learned general patterns during pre-training, fine-tuning typically requires much less data and compute than training a model from scratch.
 
 ## Reinforcement Learning from Human Feedback (RLHF)
 

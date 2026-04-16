@@ -3,7 +3,7 @@
 # 3.1.1 Overview
 In the previous chapters we saw that with LLMs we can automate many research workflows. At first glance this is pretty amazing, mindblowing in fact. But is this enough? 
 
-The limitation with LLMs is that while they can provide responses (ie. "think") they cannot "act". For example you can ask ChatGPT "What are common tumor suppressing proteins in humans?". The LLM will use its internal knowledge and provide an answer. 
+The limitation with LLMs is that while they can provide responses (ie. "think") they cannot "act". For example you can ask an LLM "What are common tumor suppressing proteins in humans?". The LLM will use its internal knowledge and provide an answer. 
 
 But it can't take any actions beyond that. For example if you ask "Can you provide literature publications to support your answer?" it can't go to Google Scholar and find papers for you.
 
@@ -31,9 +31,7 @@ Figure 3.1.1: The Anatomy of an LLM Agent. The LLM works here as the main "decis
 
 - Writing technical reports
 
-In more detail, the modern idea of AI agents connects closely with **reinforcement learning (RL)** but it actually runs deeper than that. Read more on *cybernetics* and *classical AI* if you're interested.
-
-In accepted modern practice RL provides the mathematical formulation to the AI agents that we will be using.
+In more detail, the modern idea of AI agents connects closely with **reinforcement learning (RL)**. In accepted modern practice RL provides the mathematical formulation to the AI agents that we will be using.
 
 # 3.1.2 Definitions based on RL formulation
 
@@ -41,12 +39,7 @@ In accepted modern practice RL provides the mathematical formulation to the AI a
 
 In simplest terms an AI Agent is an LLM with externally incorporated tools. But by definition, an agent is an entity that interacts with an **environment**, perceives **states**, chooses **actions**, and receives **rewards**. This flow can be described with a **Markov Decision Process (MDP)**. This also means that the current state of an agent only depends on the state before that.
 
-```{math}
-:label: mdp-eq
-s_t \rightarrow A_t \rightarrow R_{t+1},S_{t+1}
-```
-
-In other words, a single cell can be thought of as an agent: it senses chemicals around it (input), decides to move or release signals (action), and this all happens in its environment. That’s basically an agent acting in an environment!
+In other words, a single cell can be thought of as an agent: it senses chemical signals (current state), decides to move or release signals (action), and this all happens in its environment. That’s basically an agent acting in an environment!
 
 There are different "types" of AI agents, eg: Simple Agents, ReAct Agent. Read more [here](https://www.notion.so/futurehouse/Simple-and-ReAct-24f3f583b6908087a8d7e3a79900da3c?source=copy_link)
 

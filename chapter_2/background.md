@@ -13,6 +13,6 @@ These examples will teach you how to build AI systems that:
 - Extract structured information from online, open-source datasets
 
 
-The accompanying python notebooks provide step-by-step implementations that readers can run and modify for their own research projects. These notebooks demonstrate techniques such as retrieval-augmented generation (RAG) for literature search and LLM model–based dataset parsing for biological data analysis.
+The accompanying `python notebooks` provide step-by-step implementations that readers can run and modify for their own research projects. These notebooks demonstrate techniques such as retrieval-augmented generation (RAG) for literature search and LLM model–based dataset parsing for biological data analysis.
 
 To run the code snippets, you should click the 🚀 at the top of the page to launch the page as an interactive Google Colab notebook.

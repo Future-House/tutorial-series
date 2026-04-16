@@ -7,7 +7,7 @@ A model is simply an algorithm (a function) that has been trained on data in ord
 
 - an **input** (e.g., a protein sequence, microscopy image, gene expression profile)
 
-- optionally a **label** describing the correct answer (e.g., the protein's function, the cell type in an image, or whether a mutation is pathogenic)
+- optionally a **label** describing what is being predicted (e.g., the protein's function, the cell type in an image, or whether a mutation is pathogenic)
 
 
 :::{admonition} Algorithm vs Model
@@ -24,7 +24,7 @@ Once trained, the model can be used to make predictions on new data it has never
 
 It is also useful to distinguish between **supervised** and **self-supervised** training approaches.
 
-- **Supervised learning:** the training data includes both inputs and labels. The model learns by comparing its predictions to the correct answers and adjusting itself to reduce errors. For example, a dataset might contain protein sequences along with experimentally determined functions, and the model learns to predict the function from the sequence.
+- **Supervised learning:** the training data includes both inputs and labels. The model learns by comparing its predictions to the correct answers (labels) and adjusting itself to reduce errors. For example, a dataset might contain protein sequences along with their gene ontology (GO) terms, and the model learns to predict the GO terms given a sequence.
 
 - **Self-supervised learning:** the model learns patterns from data without explicit labels. Instead, part of the data is hidden or modified and the model learns to predict the missing information. For instance, a model trained on protein sequences might learn to predict masked amino acids within sequences. By solving this task across millions of sequences, the model learns useful representations of proteins that can later be applied to many biological problems.
 
@@ -37,7 +37,7 @@ You may refer to Andrew White's [Deep Learning for Molecules & Materials](https:
 :align: center
 :figclass: caption-centered
 
-Figure 1.2.1: AI is a super class of learning algorithms which encompases ML, DL and GenAI. (Created with gpt-image-1.5-2025-12-16)
+Figure 1.2.1: AI is a super class of learning algorithms which encompases machine learning (ML), deep learning (DL) and generative AI (GenAI). (Created with gpt-image-1.5-2025-12-16)
 ```
 
 - **Artificial Intelligence (AI):** The broad field of creating systems that perform tasks requiring human-like intelligence (reasoning, perception, decision-making).
@@ -54,11 +54,11 @@ AI models and computational models are foundational to modern biology and scienc
 
 - **Physics-Based Models:** encode known physical laws, conservation principles, and mechanistic understanding directly into mathematical formulations. The oldest class of computational models. eg: Ordinary and Partial Differential Equations (ODEs/PDEs), Molecular dynamics
 
-- **Traditional ML Models:** the recommended starting point for many biological tasks. Faster to develop, easier to interpret, and often appropriate when datasets are modest in size. eg: Support vector machines (SVMs), Radom Forest (RF) models. 
+- **Traditional ML Models:** a general starting point for many tasks. Faster to develop, easier to interpret, and often appropriate when datasets are modest in size. eg: Support vector machines (SVMs), Radom Forest (RF) models. 
 
 - **Deep Learning Models:** automatically learns hierarchical representations from raw data. Most advantageous when large datasets, many features, or highly structured inputs are available. eg:  Graph Neural Networks (GNNs), Recurrent Neural Networks (RNNs)
 
-- **Foundation Models:** represents a paradigm shift in computational biology. Large-scale AI systems pre-trained on vast, often unlabeled datasets using self-supervised or generative objectives. FMs address longstanding challenges in bioinformatics, including limited annotated data, data noise, and the need for generalizable representations across biological domains. Large language models belong to this category.
+- **Foundation Models:** represents a paradigm shift in computational biology. Large-scale AI systems trained on vast, often unlabeled datasets using self-supervised or generative objectives. Large language models belong to this category.
 
 ```{table} Table 1.2.1: Commonly encountered computational and AI models in science.
 | Model Category | Methods/Architectures | Key Characteristics | Primary Applications | 

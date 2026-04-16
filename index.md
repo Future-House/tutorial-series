@@ -1,6 +1,6 @@
 # FutureHouse Tutorial Series: Practical AI for Scientists 
 
-The goal of this FutureHouse tutorial series is to help scientists, like yourself, use AI as a practical tool for accelerating discovery. AI is actively transforming biology—from predicting protein structures and designing new molecules to analyzing single-cell data—but many scientists still see it as overly technical or limited to computational specialists.
+The goal of this FutureHouse tutorial series is to help scientists, like yourself, use AI as a practical tool for accelerating discovery. AI is actively transforming biology, from predicting protein structures and designing new molecules to analyzing single-cell data.But many scientists still see using AI to be overly technical or limited to only computational specialists.
 
 This course aims to close that gap by helping you become comfortable with AI: what it is, how it works at a conceptual level, and how it can support your research.
 
@@ -21,6 +21,4 @@ By the end of this series, you should:
 
 # Prerequisites
 
-- A curious mind
-- Basic scientific knowledge
-- Minimal to almost no background in Python programming
+- A curious mindset
