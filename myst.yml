@@ -60,11 +60,6 @@ site:
     logo_text: "AI for Scientists"
     style: custom.css
     use_repository_button: true
-  nav:
-    # Colab only opens .ipynb from GitHub — not .md. Add one entry per notebook you want in the menu.
-    - title: "▶ Colab: LLMs for biology"
-      url: "https://colab.research.google.com/github/Future-House/tutorial-series/blob/main/chapter_2/llms_for_biology.ipynb"
-    - title: "▶ Colab: UniProt example"
-      url: "https://colab.research.google.com/github/Future-House/tutorial-series/blob/main/chapter_2/uniprot_example.ipynb"
-    - title: "▶ Colab: Agent implementation"
-      url: "https://colab.research.google.com/github/Future-House/tutorial-series/blob/main/chapter_3/agent_implementation.ipynb"
+    hide_edit_button: true
+    binder_url: "https://colab.research.google.com/github/Future-House/tutorial-series/blob/main"
+  
