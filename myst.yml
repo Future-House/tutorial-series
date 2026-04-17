@@ -60,6 +60,6 @@ site:
     logo_text: "AI for Scientists"
     style: custom.css
     use_repository_button: true
-    hide_edit_button: true
+    edit_url: null
     binder_url: "https://colab.research.google.com/github/Future-House/tutorial-series/blob/main"
   
