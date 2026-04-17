@@ -3,8 +3,8 @@ version: 1
 project:
   id: 4cfcd24a-8583-4552-9b2d-d324cb6c168f
   title: "AI for Scientists - FutureHouse Tutorial"
-  description: "A collection of tutorials for the FutureHouse Fellowship program covering AI Agents for Science."
-  keywords: [FutureHouse, Fellowship, AI, Agents, Science]
+  description: "A collection of tutorials for scientists to learn about AI and its applications in science."
+  keywords: [FutureHouse, AI, Agents, Science]
   github: "https://github.com/Future-House/tutorial-series"
   copyright: "2026 FutureHouse"
   jupyter: true
