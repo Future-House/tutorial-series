@@ -14,12 +14,15 @@ launch_buttons:
   notebook_interface: "jupyterlab"
   colab_url: "https://colab.research.google.com"
   binderhub_url: ""   
+  edit_url: null
 
 bibtex_bibfiles: 
   - references.bib
   
 html:
   use_repository_button: true 
+  use_issues_button: true
+  use_edit_page_button: false
   extra_css:
     - custom.css
 
