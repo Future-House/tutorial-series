@@ -138,6 +138,8 @@ The table below provides a comparative overview of several major foundation mode
 
 - [7 AI Terms You Need to Know](https://www.youtube.com/watch?v=VSFuqMh4hus)
 
+## References
+
 ```{bibliography}
 :filter: docname in docnames
 ```

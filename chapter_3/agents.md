@@ -1,6 +1,6 @@
 # 3.1 Theoretical Background
 
-# 3.1.1 Overview
+## 3.1.1 Overview
 In the previous chapters we saw that with LLMs we can automate many research workflows. At first glance this is pretty amazing, mindblowing in fact. But is this enough? 
 
 The limitation with LLMs is that while they can provide responses (ie. "think") they cannot "act". For example you can ask an LLM "What are common tumor suppressing proteins in humans?". The LLM will use its internal knowledge and provide an answer. 
@@ -33,7 +33,7 @@ Figure 3.1.1: The Anatomy of an LLM Agent. The LLM works here as the main "decis
 
 In more detail, the modern idea of AI agents connects closely with **reinforcement learning (RL)**. In accepted modern practice RL provides the mathematical formulation to the AI agents that we will be using.
 
-# 3.1.2 Definitions based on RL formulation
+## 3.1.2 Definitions based on RL formulation
 
 **Agents:**
 
@@ -64,7 +64,7 @@ An agent uses tools to improve its performance. Think of tools as **resources or
 
 In the following sections let's see how to deploy an agent 
 
-# 3.1.3 Let's recap
+## 3.1.3 Let's recap
 Key Concepts to Remember
 
 | Concept | Plain English |
@@ -76,6 +76,12 @@ Key Concepts to Remember
 | **stop_reason** | How the AI tells us: "I need a tool" vs "I'm done" |
 
 
-# 3.1.4 Additional Reading
+## 3.1.4 Additional Reading
 - More mathematical explanations can be found in this paper: [Aviary: training language agents on challenging scientific tasks](https://arxiv.org/abs/2412.21154)
 - [AI Agents - IBM tutorials](https://www.ibm.com/think/topics/ai-agents)
+
+## References
+
+```{bibliography}
+:filter: docname in docnames
+```

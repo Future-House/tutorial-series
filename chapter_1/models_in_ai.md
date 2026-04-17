@@ -86,6 +86,8 @@ AI models and computational models are foundational to modern biology and scienc
 - [A Medium article on ML beginner's guide](https://medium.com/@dimas.wrdntx/machine-learning-for-dummies-a-beginners-guide-dee643f983b8)
 - [Every Flagship AI Model Explained](https://www.youtube.com/watch?v=DsKZpgoy830)
 
+## References
+
 ```{bibliography}
 :filter: docname in docnames
 ```
