@@ -61,10 +61,10 @@ The state is a snapshot of the agent’s current situation. ie. what the agent k
 
 An agent uses tools to improve its performance. Think of tools as **resources or specialized skills** the agent can call on. For example, an AI agent answering biology questions might use a database of research papers as a tool. A robot might have a microscope or a pipette as a physical tool. In software, tools might be APIs, calculators, or data analysis modules.
 
-
 In the following sections let's see how to deploy an agent 
 
-## 3.1.3 Let's recap
+**3.1.3 Let's recap**
+
 Key Concepts to Remember
 
 | Concept | Plain English |
@@ -76,12 +76,6 @@ Key Concepts to Remember
 | **stop_reason** | How the AI tells us: "I need a tool" vs "I'm done" |
 
 
-## 3.1.4 Additional Reading
+## 3.1.3 Additional Reading
 - More mathematical explanations can be found in this paper: [Aviary: training language agents on challenging scientific tasks](https://arxiv.org/abs/2412.21154)
 - [AI Agents - IBM tutorials](https://www.ibm.com/think/topics/ai-agents)
-
-## References
-
-```{bibliography}
-:filter: docname in docnames
-```
