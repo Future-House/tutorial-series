@@ -55,6 +55,8 @@ site:
   template: book-theme
   title: "Practical AI for Scientists - FutureHouse Tutorial"
   options:
+    # Tab icon (browser favicon). Use PNG or .ico; replace images/favicon.png with your brand asset.
+    favicon: figures/FutureHouse-Logo.png
     logo_text: "AI for Scientists"
     style: custom.css
     use_repository_button: true
