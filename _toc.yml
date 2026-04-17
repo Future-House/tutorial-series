@@ -1,28 +1,24 @@
 format: jb-book
 root: index
+
 parts:
-  
   - caption: "1. Introduction"
-    numbered: true
     chapters:
-      - file: chapter_1/background.md
-      - file: chapter_1/models_in_ai.md
-      - file: chapter_1/LLMs_for_biology.md
-  
+      - file: chapter_1/background
+      - file: chapter_1/models_in_ai
+      - file: chapter_1/LLMs_for_biology
+
   - caption: "2. Applications of AI in Biology"
-    numbered: true
     chapters:
-      - file: chapter_2/background.md
-      - file: chapter_2/llms_for_biology.ipynb
-      - file: chapter_2/uniprot_example.ipynb
+      - file: chapter_2/background
+      - file: chapter_2/llms_for_biology
+      - file: chapter_2/uniprot_example
 
   - caption: "3. LLM Agents"
-    numbered: true
     chapters:
-      - file: chapter_3/agents.md
-      - file: chapter_3/agent_implementation.ipynb
+      - file: chapter_3/agents
+      - file: chapter_3/agent_implementation
 
-  - caption: "Resources"
-    numbered: true
+  - caption: "4. Resources"
     chapters:
-       - file: chapter_1/definitions.md
+      - file: resources/glossary

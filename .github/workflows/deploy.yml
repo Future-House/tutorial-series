@@ -3,52 +3,44 @@ name: Deploy Jupyter Book to GitHub Pages
 on:
   push:
     branches:
-      - main         
+      - main
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  deploy-book:
     runs-on: ubuntu-latest
     permissions:
-      pages    : write
-      id-token : write
-      contents : read
+      pages: write
+      id-token: write
+      contents: read
 
     steps:
-      # 1. Check out your repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      # 2. Set up Python
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: "3.11"
-          cache: pip            
-      # 3. Install Jupyter Book and dependencies
+          python-version: "3.13"
+          cache: pip
+
       - name: Install dependencies
-        run: |
-          pip install mystmd jupyter-book
+        run: pip install -r requirements.txt
 
-      # 4. Build the book
-      #    Output goes to _build/html/
-      - name: Build the book
-        env:
-          BASE_URL: "/tutorial-series"
-        run: |
-          myst build --html 2>&1 | tee build.log
-          if [ ! -d "_build/html" ]; then
-            echo "❌ Build failed — _build/html was not created"
-            cat build.log
-            exit 1
-          fi
-
-      # 5. Upload the built site as a GitHub Pages artifact
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: cache executed notebooks
+        uses: actions/cache@v4
         with:
-          path: "_build/html"
+          path: _build/.jupyter_cache
+          key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
 
-      # 6. Deploy to GitHub Pages
+      - name: Build the book
+        run: |
+          jupyter-book build .
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _build/html
+
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4

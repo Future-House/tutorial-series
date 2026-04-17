@@ -1,4 +1,5 @@
-title: AI for Scientists - FutureHouse tutorial
+title: "Practical AI for Scientists - FutureHouse Tutorial"
+author: FutureHouse
 copyright: "2026 FutureHouse"
 
 # ──────────────────────────────────────────────
@@ -6,31 +7,39 @@ copyright: "2026 FutureHouse"
 # "off" means notebooks are NOT re-run during build.
 # This is safest for tutorials that call external APIs (like Anthropic).
 # Pre-run your notebooks and save the outputs before pushing.
-#──────────────────────────────────────────────
+# ──────────────────────────────────────────────
 execute:
-  execute_notebooks   : "off"
+  execute_notebooks: "off"
 
 launch_buttons:
   notebook_interface: "jupyterlab"
   colab_url: "https://colab.research.google.com"
-  binderhub_url: ""   
-  edit_url: null
+  binderhub_url: ""
 
-bibtex_bibfiles: 
+bibtex_bibfiles:
   - references.bib
-  
+
 html:
-  use_repository_button: true 
+  use_repository_button: true
   use_issues_button: true
   use_edit_page_button: false
+  favicon: figures/FutureHouse-Logo.png
   extra_css:
     - custom.css
 
 repository:
-  url                 : "https://github.com/Future-House/tutorial-series"
-  branch              : main
-  path_to_book        : "."
+  url: "https://github.com/Future-House/tutorial-series"
+  branch: main
+  path_to_book: "."
 
 exclude_patterns:
   - .github/**
   - "**/.github/**"
+  - .venv/**
+  - "**/.venv/**"
+  - _build/**
+  - .git/**
+  - custom.css
+  - references.bib
+  - "*.yml"
+  - "*.yaml"

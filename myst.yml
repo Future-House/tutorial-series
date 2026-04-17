@@ -7,7 +7,10 @@ project:
   keywords: [FutureHouse, AI, Agents, Science]
   github: "https://github.com/Future-House/tutorial-series"
   copyright: "2026 FutureHouse"
-  jupyter: true
+  jupyter: 
+    url: "https://colab.research.google.com"
+    repo: "Future-House/tutorial-series"
+    ref: main
   #numbering: 
   #  title: true
   #  headings: true
