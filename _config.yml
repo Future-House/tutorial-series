@@ -14,10 +14,12 @@ execute:
 launch_buttons:
   notebook_interface: "jupyterlab"
   colab_url: "https://colab.research.google.com"
-  binderhub_url: ""
 
 bibtex_bibfiles:
   - references.bib
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.bibtex
 
 html:
   use_repository_button: true
