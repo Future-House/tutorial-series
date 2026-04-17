@@ -4,15 +4,15 @@ Language models are systems designed to work with human language by learning pat
 
 Language models were originally developed for natural language processing, but the same principles can be applied to biological sequences such as DNA, RNA, and proteins. In this setting, sequences of amino acids or nucleotides are treated similarly to sequences of words in a sentence, allowing models to learn patterns and relationships within biological data.
 
-Many modern AI models used in biology such as AlphaFold [@nussinov2022alphafoldartificialintelligence] and ESM2 [@lin2023evolutionaryscalepredictionof] are sequence-based language models. These models can also be considered foundation models, as they are trained on very large datasets and can be adapted to a wide range of downstream biological tasks. 
+Many modern AI models used in biology such as AlphaFold {cite}`nussinov2022alphafoldartificialintelligence` and ESM2 {cite}`lin2023evolutionaryscalepredictionof` are sequence-based language models. These models can also be considered foundation models, as they are trained on very large datasets and can be adapted to a wide range of downstream biological tasks. 
 
 --- 
 
-# 1.3.1 Transformers: The Architecture Behind Modern LLMs
+## 1.3.1 Transformers: The Architecture Behind Modern LLMs
 
-Most modern natural language models, including those in biology, are built using a neural network architecture called the "transformer" [@Vaswani].
+Most modern natural language models, including those in biology, are built using a neural network architecture called the "transformer" {cite}`Vaswani`.
 
-Before transformers, many sequence models relied on architectures such as recurrent neural networks (RNNs) [@rumelhart1986learning] that processed sequences one element at a time. While effective, these models struggled to capture long-range relationships within sequences.
+Before transformers, many sequence models relied on architectures such as recurrent neural networks (RNNs) {cite}`rumelhart1986learning` that processed sequences one element at a time. While effective, these models struggled to capture long-range relationships within sequences.
 
 :::{note}
 The  **attention** mechanism in Transformers address the limitation in capturing long-range relationships.
@@ -32,7 +32,7 @@ Figure 1.3.1: Attention mechanism in transformers allow the model to learn relat
 
 ---
 
-# 1.3.2 Training Language Models
+## 1.3.2 Training Language Models
 
 Language models are typically trained using a strategy known as [self-supervised learning](https://www.ibm.com/think/topics/self-supervised-learning). Training an LLM is less like "teaching a chatbot facts" and more like building a *very large*, *very flexible* pattern-recognizer, then gradually steering it toward helpful behaviors. 
 
@@ -49,7 +49,7 @@ Figure 1.3.2: Training an LLM is a multi-step process: pre-training, fine-tuning
 
 Together, pre-training, fine-tuning, and RLHF allow LLMs to first learn general patterns from massive datasets and then become more specialized and aligned with human expectations.
 
-## Pre-training
+### Pre-training
 
 Pre-training is the first stage in training a language model. During this stage, the model is trained on very large collections of sequences. These sequences can be natural language (i.e. sequences of words), protein sequences (i.e. sequences of amino acids), DNA sequences (i.e. sequences of nucleotides), or other sequential data.  A foundation model trained only on protein sequences is known as a Protein Language Model (PLM). 
 
@@ -72,7 +72,7 @@ M A D K T L E V K → ?
 
 **2) Masked token prediction**
 
-Another common objective is *masked token prediction*, also known as masked language modeling. In this approach, some tokens in the sequence are randomly hidden, and the model must predict the missing elements using the surrounding context [@devlin2019bertpretrainingof]. This objective is commonly used in autoregressive language models, such as GPT-style models.
+Another common objective is *masked token prediction*, also known as masked language modeling. In this approach, some tokens in the sequence are randomly hidden, and the model must predict the missing elements using the surrounding context {cite}`devlin2019bertpretrainingof`. This objective is commonly used in autoregressive language models, such as GPT-style models.
 
 Here the model must infer the missing amino acid in the given sequence.
 ```
@@ -81,17 +81,17 @@ M A D [MASK] T L E V K
 Correct prediction: K
 ```
 
-By training the model to predict either the next or the masked token of millions or billions of sequences, the model gradually learns "patterns" in the sequences. In natural language, this includes grammar and semantic relationships between words. In biological sequences, the model learns signals related to protein structure, evolutionary constraints, and functional motifs [@gu2021domain] based on the training data. 
+By training the model to predict either the next or the masked token of millions or billions of sequences, the model gradually learns "patterns" in the sequences. In natural language, this includes grammar and semantic relationships between words. In biological sequences, the model learns signals related to protein structure, evolutionary constraints, and functional motifs {cite}`gu2021domain` based on the training data. 
 
-## Fine-tuning
-After pre-training, language models can be adapted to specific tasks through a process known as fine-tuning. During fine-tuning, the pre-trained model is further trained on a smaller, task-specific dataset. Unlike pre-training, these datasets often contain labeled examples, where the correct output for each input is known [@luo2022biogpt;@gu2021domain].
+### Fine-tuning
+After pre-training, language models can be adapted to specific tasks through a process known as fine-tuning. During fine-tuning, the pre-trained model is further trained on a smaller, task-specific dataset. Unlike pre-training, these datasets often contain labeled examples, where the correct output for each input is known {cite}`luo2022biogpt,gu2021domain`.
 
 The purpose of this step is to teach the model to specialize in particular applications while retaining the model. For example, a protein language model that has been pre-trained on millions of protein sequences can be fine-tuned to perform tasks such as predicting protein function, identifying binding sites, or estimating the effects of mutations. Compared to pre-training, fine-tuning typically requires much less data and compute.
 
 
-## Reinforcement Learning from Human Feedback (RLHF)
+### Reinforcement Learning from Human Feedback (RLHF)
 
-For many *conversational AI systems*, an additional training stage called RLHF is used to improve the quality and safety of model responses [@ouyang2022training].
+For many *conversational AI systems*, an additional training stage called RLHF is used to improve the quality and safety of model responses {cite}`ouyang2022training`.
 
 In RLHF, human evaluators review multiple outputs generated by the model and rank them according to criteria such as helpfulness, accuracy, and clarity. These rankings are then used to train a reward model that scores model outputs. The language model is subsequently optimized to produce responses that receive higher reward scores.
 
@@ -99,7 +99,7 @@ This process helps align the model’s behavior with human expectations and impr
 
 ---
 
-# 1.3.3 Examples of foundational models in biology
+## 1.3.3 Examples of foundational models in biology
 
 The table below provides a comparative overview of several major foundation models used in biological research.
 
@@ -121,7 +121,7 @@ The table below provides a comparative overview of several major foundation mode
 
 --- 
 
-# 1.3.4 Additional Reading
+## 1.3.4 Additional Reading
 
 - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter0/1):  *Highly recommended! A great resource for getting started on LLMs*
 - [Databricks blog post on LLM pre-training](https://www.databricks.com/blog/llm-pre-training-and-custom-llms)
@@ -137,3 +137,7 @@ The table below provides a comparative overview of several major foundation mode
 - [Attention mechanism in transformers](https://www.youtube.com/watch?v=eMlx5fFNoYc)
 
 - [7 AI Terms You Need to Know](https://www.youtube.com/watch?v=VSFuqMh4hus)
+
+```{bibliography}
+:filter: docname in docnames
+```
