@@ -18,6 +18,7 @@ parts:
     chapters:
       - file: chapter_3/agents
       - file: chapter_3/agent_implementation
+      - file: chapter_3/aviary_agent_implementation
 
   - caption: "4. Resources"
     chapters:
