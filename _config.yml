@@ -46,7 +46,6 @@ exclude_patterns:
   - "**/.venv/**"
   - _build/**
   - .git/**
-  - custom.css
   - references.bib
   - "*.yml"
   - "*.yaml"
