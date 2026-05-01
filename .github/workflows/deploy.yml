@@ -1,4 +1,4 @@
-name: Deploy Jupyter Book to GitHub Pages
+name: Deploy MyST Site to GitHub Pages
 
 on:
   push:
@@ -15,29 +15,23 @@ jobs:
       contents: read
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          python-version: "3.11"
           cache: pip
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: cache executed notebooks
-        uses: actions/cache@v4
-        with:
-          path: _build/.jupyter_cache
-          key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
-
-      - name: Build the book
+      - name: Build the site
         run: |
-          jupyter-book build .
+          myst build --html
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _build/html
 
