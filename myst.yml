@@ -12,7 +12,7 @@ project:
     repo: "Future-House/tutorial-series"
     ref: main
   numbering: 
-    numfig: false
+    figures: false
   #  headings: true
  
   bibliography:
