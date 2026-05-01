@@ -32,7 +32,7 @@ html:
   use_edit_page_button: false
   favicon: figures/FutureHouse-Logo.png
   extra_css:
-    - custom.css
+    - _static/custom.css
 
 repository:
   url: "https://github.com/Future-House/tutorial-series"

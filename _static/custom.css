@@ -1,0 +1,16 @@
+.caption-centered .caption {
+    text-align: center;
+}
+.myst-home-link span {
+    display: none;
+}
+
+.myst-home-link::after {
+    content: "Practical AI for Scientists";
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+span.caption-number {
+    display: none;
+  }
