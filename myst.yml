@@ -11,8 +11,8 @@ project:
     url: "https://colab.research.google.com"
     repo: "Future-House/tutorial-series"
     ref: main
-  #numbering: 
-  #  title: true
+  numbering: 
+    numfig: false
   #  headings: true
  
   bibliography:
