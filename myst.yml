@@ -49,6 +49,7 @@ project:
       children:
         - file: chapter_3/agents.md
         - file: chapter_3/agent_implementation.ipynb
+        - file: chapter_3/aviary_agent_implementation.ipynb
         
     - title: "4. Resources"
       children:

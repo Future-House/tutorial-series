@@ -49,7 +49,7 @@ BASE_URL=/tutorial-series myst build --html
 | `index.md` | Landing page |
 | `chapter_1/` | Introduction (background, models, LLMs for biology) |
 | `chapter_2/` | Applications in biology; interactive notebooks |
-| `chapter_3/` | LLM agents; `agents.md` and `agent_implementation.ipynb` |
+| `chapter_3/` | LLM agents; `agents.md` and `agent_implementation.ipynb`, `avairy_agent_implementation.ipynb`|
 | `resources/` | Glossary |
 | `.github/workflows/deploy.yml` | Build and deploy to GitHub Pages on push to `main` |
 
