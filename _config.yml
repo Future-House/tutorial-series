@@ -20,6 +20,8 @@ bibtex_bibfiles:
 sphinx:
   extra_extensions:
     - sphinxcontrib.bibtex
+  config:
+    numfig: false
 
 html:
   use_repository_button: true
