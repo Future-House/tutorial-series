@@ -22,3 +22,7 @@ By the end of this series, you should:
 # Prerequisites
 
 - A curious mindset
+
+# Contact Us for Questions, Suggestions and Feedback
+
+Email us at: tutorials@futurehouse.org

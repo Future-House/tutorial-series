@@ -17,8 +17,10 @@ This is where AI agents come into play. Agents are **autonomous systems** which 
 Figure 3.1.1: The Anatomy of an LLM Agent. The LLM works here as the main "decision maker". Invoking the tools enables the LLM to have improved/specialized skills.  
 ```
 
->[!Tip]
-> Agents = LLM + Tools
+:::{admonition}
+:class: tip
+Agents = LLM + Tools
+:::
 
 **Here are some example use cases of AI agents in science**
 - Searching the literature - see section 2.2 for an example implementation
