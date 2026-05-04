@@ -17,8 +17,7 @@ This is where AI agents come into play. Agents are **autonomous systems** which 
 Figure 3.1.1: The Anatomy of an LLM Agent. The LLM works here as the main "decision maker". Invoking the tools enables the LLM to have improved/specialized skills.  
 ```
 
-:::{admonition}
-:class: tip
+:::{tip}
 Agents = LLM + Tools
 :::
 
