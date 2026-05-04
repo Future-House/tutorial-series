@@ -6,7 +6,6 @@ Language models were originally developed for natural language processing, but t
 
 Many modern AI models used in biology such as AlphaFold {cite}`nussinov2022alphafoldartificialintelligence` and ESM2 {cite}`lin2023evolutionaryscalepredictionof` are sequence-based language models. These models can also be considered foundation models, as they are trained on very large datasets and can be adapted to a wide range of downstream biological tasks. 
 
---- 
 
 ## 1.3.1 Transformers: The Architecture Behind Modern LLMs
 
@@ -30,7 +29,6 @@ Because transformers process sequences in parallel and capture long-range depend
 Figure 1.3.1: Attention mechanism in transformers allow the model to learn relationships between amino acids that are far apart. (Created with gemini-3.1-flash-image-preview)
 ```
 
----
 
 ## 1.3.2 Training Language Models
 
@@ -118,8 +116,6 @@ The table below provides a comparative overview of several major foundation mode
 | **ProGen** | Protein | Transformer Decoder (Conditional) | Controllable protein sequence generation | Trained on ~280M protein sequences with taxonomic/functional tags (pqac-00000026) |
 | **ProteinBERT** | Protein | Transformer Encoder (BERT-style) | Protein function prediction, GO term classification | Trained on UniRef90 + Gene Ontology annotations (pqac-00000024, pqac-00000029) |
 ```
-
---- 
 
 ## 1.3.4 Additional Reading
 

@@ -76,7 +76,6 @@ AI models and computational models are foundational to modern biology and scienc
 | Hybrid/Integrative | Physics-Informed Neural Networks (PINNs) | Embed ODE/PDE residuals and physical constraints into NN loss; solve forward/inverse problems with sparse/noisy data | Tumor growth curves; gene expression kinetics; epidemiology (SIR) with parameter inference {cite}`farea2025using` |
 | Hybrid/Integrative | Differentiable biology (differentiable programming with simulators + deep nets) | End-to-end autodiff of mechanistic + learnable components; integrate priors (symmetries, simulators) with data-driven modules | Molecular mechanism modeling; differentiable dynamics; end-to-end folding/energy landscapes; uncertainty-aware inference {cite}`alquraishi2021` |
 ```
----
 
 
 ## 1.2.4 Additional materials
