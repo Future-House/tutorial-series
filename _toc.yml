@@ -17,8 +17,8 @@ parts:
   - caption: "3. LLM Agents"
     chapters:
       - file: chapter_3/agents
-      - file: chapter_3/agent_implementation
       - file: chapter_3/aviary_agent_implementation
+      - file: chapter_3/agent_implementation
       - file: chapter_3/agent_mcp_example
 
   - caption: "4. Resources"
