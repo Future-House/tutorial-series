@@ -87,3 +87,9 @@ As introduced in chapter 2, [PaperQA2](https://github.com/Future-House/paper-qa)
 ## 3.1.4 Additional Reading
 - More mathematical explanations can be found in this paper: [Aviary: training language agents on challenging scientific tasks](https://arxiv.org/abs/2412.21154)
 - [AI Agents - IBM tutorials](https://www.ibm.com/think/topics/ai-agents)
+
+## Providing Feedback
+
+We’d love to hear from you! Whether you run into issues, have ideas for improving the tutorials, or want to suggest new topics, feel free to reach out. 
+
+Email us at: [tutorials@futurehouse.org](tutorials@futurehouse.org)

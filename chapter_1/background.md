@@ -74,6 +74,12 @@ AI has proven capable of extracting intricate patterns from large datasets in ge
 
 - [Geoffrey Hinton: The 60 Minutes Interview](https://www.youtube.com/watch?v=Rl9nHNeketE)
 
+## Providing Feedback
+
+We’d love to hear from you! Whether you run into issues, have ideas for improving the tutorials, or want to suggest new topics, feel free to reach out. 
+
+Email us at: [tutorials@futurehouse.org](tutorials@futurehouse.org)
+
 ## References
 
 ```{bibliography}
