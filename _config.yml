@@ -22,7 +22,12 @@ sphinx:
     thebe_config:
       repository_url: "https://github.com/Future-House/tutorial-series"
       repository_branch: "main"
+      binderhub_url: "https://mybinder.org"
       path_to_book: "."
+      selector: ".cell"                        # ← added
+      use_thebe_lite: false                    # ← added
+      codemirror_config:
+        theme: "default"
 
     html_theme_options:
       use_issues_button: true
@@ -50,4 +55,3 @@ exclude_patterns:
   - _build/**
   - .git/**
   - references.bib
-  
