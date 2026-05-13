@@ -44,5 +44,5 @@ exclude_patterns:
   - _build/**
   - .git/**
   - references.bib
-  - "*.yml"
-  - "*.yaml"
+  #- "**/*.yml"
+  #- "**/*.yaml"
