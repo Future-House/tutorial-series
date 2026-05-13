@@ -43,6 +43,7 @@ exclude_patterns:
   - "**/.venv/**"
   - _build/**
   - .git/**
+  - "**/.env"
   - references.bib
   #- "**/*.yml"
   #- "**/*.yaml"
