@@ -23,6 +23,52 @@ By the end of this series, you should:
 
 - A curious mindset
 
-# Contact Us for Questions, Suggestions and Feedback
+# Using Tutorials
 
-Email us at: tutorials@futurehouse.org
+The tutorials can be launched using the rocket (🚀) button  at the top of the page.
+
+### Option 1 — Google Colab (**recommended**)
+Opens the notebook in Google Colab with the fastest and most reliable experience.
+
+Before running the tutorial, add your API keys using **either**:
+
+- a `.env` file, or
+- **Colab Secrets** (`🔑 Secrets` tab in the left sidebar)
+
+Example `.env`:
+```bash
+OPENAI_API_KEY=your_key_here
+ANTHROPIC_API_KEY=your_key_here
+```
+
+### Option 2 — MyBinder
+Launches a temporary cloud Jupyter environment directly in your browser.
+
+⚠️ Binder environments can take a few minutes to build and start.
+
+After the notebook loads, create a `.env` file in the notebook directory containing your API keys:
+
+```bash
+OPENAI_API_KEY=your_key_here
+ANTHROPIC_API_KEY=your_key_here
+```
+
+### Notes
+- You only need API keys for the providers used in a given notebook.
+- Never commit or publicly share your API keys.
+- If a cell fails due to missing credentials, verify that your keys were loaded correctly before rerunning the cell.
+
+
+# Contacting Us
+
+We’d love to hear from you! Whether you run into issues, have ideas for improving the tutorials, or want to suggest new topics, feel free to reach out. 
+
+Email us at: [tutorials@futurehouse.org](tutorials@futurehouse.org)
+
+When reporting an issue, it’s helpful to include:
+
+- The tutorial chapter number and/or title
+- Whether you used Google Colab or Binder
+- The full error message or screenshot (if available)
+
+We’re actively improving these tutorials and appreciate your feedback and contributions.
