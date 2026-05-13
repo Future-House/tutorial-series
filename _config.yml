@@ -16,19 +16,8 @@ repository:
 sphinx:
   extra_extensions:
     - sphinxcontrib.bibtex
-    - sphinx_thebe
   config:
     numfig: false
-    thebe_config:
-      repository_url: "https://github.com/Future-House/tutorial-series"
-      repository_branch: "main"
-      binderhub_url: "https://mybinder.org"
-      path_to_book: "."
-      selector: ".cell"                        # ← added
-      use_thebe_lite: false                    # ← added
-      codemirror_config:
-        theme: "default"
-
     html_theme_options:
       use_issues_button: true
       use_repository_button: true
@@ -36,7 +25,7 @@ sphinx:
       repository_branch: "main"
       path_to_book: "."                                                 
       launch_buttons:
-        thebe: true
+        thebe: false
         colab_url: "https://colab.research.google.com"
         binderhub_url: "https://mybinder.org"
         notebook_interface: "jupyterlab"
@@ -55,3 +44,4 @@ exclude_patterns:
   - _build/**
   - .git/**
   - references.bib
+  - "**/.env"
