@@ -6,7 +6,7 @@ parts:
     chapters:
       - file: chapter_1/background
       - file: chapter_1/models_in_ai
-      - file: chapter_1/LLMs_for_biology
+      - file: chapter_1/llms_in_biology
 
   - caption: "2. Applications of AI in Biology"
     chapters:

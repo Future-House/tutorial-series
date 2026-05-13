@@ -2,24 +2,21 @@ title: "Practical AI for Scientists - FutureHouse Tutorial"
 author: FutureHouse
 copyright: "2026 FutureHouse"
 
-# ──────────────────────────────────────────────
-# Execution settings
-# "off" means notebooks are NOT re-run during build.
-# This is safest for tutorials that call external APIs (like Anthropic).
-# Pre-run your notebooks and save the outputs before pushing.
-# ──────────────────────────────────────────────
 execute:
   execute_notebooks: "off"
 
 launch_buttons:
   notebook_interface: "jupyterlab"
   colab_url: "https://colab.research.google.com"
+  thebe: true
+  binderhub_url: "https://mybinder.org"
 
 bibtex_bibfiles:
   - references.bib
 sphinx:
   extra_extensions:
     - sphinxcontrib.bibtex
+    - sphinx_thebe
   config:
     numfig: false
     html_theme_options:
