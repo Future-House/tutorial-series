@@ -24,3 +24,4 @@ parts:
   - caption: "4. Resources"
     chapters:
       - file: resources/glossary
+      - file: resources/submit

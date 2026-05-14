@@ -23,10 +23,12 @@ By the end of this series, you should:
 
 - A curious mindset
 
-# Using Tutorials
+# How to Use the Tutorials
 
-The tutorials can be launched using the rocket (🚀) button  at the top of the page.
+The tutorials can be launched using the rocket (🚀) button  at the top of the page. 
 
+<details>
+<summary> 👇 Expand to see more detail  </summary>
 ### Option 1 — Google Colab (**recommended**)
 Opens the notebook in Google Colab with the fastest and most reliable experience.
 
@@ -57,9 +59,18 @@ ANTHROPIC_API_KEY=your_key_here
 - You only need API keys for the providers used in a given notebook.
 - Never commit or publicly share your API keys.
 - If a cell fails due to missing credentials, verify that your keys were loaded correctly before rerunning the cell.
+</details>
 
 
-# Contacting Us
+# Submit Your Work
+
+This tutorial series was created to help grow the scientific community’s engagement with AI and agentic workflows. If you enjoyed the series and built an agent, workflow, or related project, we’d love to see what you created.
+
+Project submissions are completely optional, but we welcome examples of experiments, tools, workflows, or extensions inspired by the tutorials.
+
+You can submit your work using this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdgBk-ATooOA1teiqcqztAmBIQ_9jkEl4Ts5CDImV7KBdqA2Q/viewform?usp=publish-editor)
+
+# Provide Feedback
 
 We’d love to hear from you! Whether you run into issues, have ideas for improving the tutorials, or want to suggest new topics, feel free to reach out. 
 

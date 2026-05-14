@@ -1,6 +1,6 @@
 # 1.1 Evolution of AI
 
-***This page provides background on AI. You may skip to Chapter 2 or Chapter 3 to see more hands-on applications.***
+***This page provides a background on AI. You may skip to Chapter 2 or Chapter 3 to see more hands-on applications.***
 
 From genome sequencing to single-cell transcriptomics to high-content imaging and protein structure prediction, modern biology generates data at a scale and complexity that exceeds traditional analytical approaches. Artificial intelligence (AI) has emerged as a powerful set of tools for extracting patterns, generating hypotheses, and accelerating discovery from biological data. 
 
