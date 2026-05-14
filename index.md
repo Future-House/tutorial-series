@@ -28,7 +28,7 @@ By the end of this series, you should:
 The tutorials can be launched using the rocket (🚀) button  at the top of the page. 
 
 <details>
-<summary> 👇 Expand to see more detail  </summary>
+<summary> 👇 Expand to see more details  </summary>
 
 ### Option 1 — Google Colab (**recommended**)
 Opens the notebook in Google Colab with the fastest and most reliable experience.
