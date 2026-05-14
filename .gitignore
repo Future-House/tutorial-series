@@ -15,6 +15,7 @@ __pycache__/
 .python-version
 .env
 .venv
+myst.yml.bak
 
 
 # Installer logs
