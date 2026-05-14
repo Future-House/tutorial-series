@@ -50,7 +50,7 @@ ANTHROPIC_API_KEY=your_key_here
 - If a cell fails due to missing credentials, verify that your keys were loaded correctly before rerunning the cell.
 :::
 
-**Providing Feedback**
+**Provide Feedback**
 
 We’d love to hear from you! Whether you run into issues, have ideas for improving the tutorials, or want to suggest new topics, feel free to reach out. 
 
