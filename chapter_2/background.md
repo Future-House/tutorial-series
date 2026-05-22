@@ -16,7 +16,7 @@ The accompanying `python notebooks` provide step-by-step implementations that re
 
 :::{admonition} 🚀 How to run the notebooks
 
-Tutorials can be launched using the rocket (🚀) button at the top of the page.
+Tutorials with coding example can be launched using the rocket (🚀) button at the top of the page.
 
 ### Option 1 — Google Colab (**recommended**)
 Opens the notebook in Google Colab with the fastest and most reliable experience.
@@ -48,6 +48,8 @@ ANTHROPIC_API_KEY=your_key_here
 - You only need API keys for the providers used in a given notebook.
 - Never commit or publicly share your API keys.
 - If a cell fails due to missing credentials, verify that your keys were loaded correctly before rerunning the cell.
+- When you run a cell, a green check mark (✅) will appear at the top once the execution completes successfully. If the execution fails, you’ll see a red cross mark (❌) instead.
+- Some cells may not produce any visible output, so don’t worry if nothing appears below the cell. As long as you see the green check mark, you’re good to continue.
 :::
 
 **Provide Feedback**

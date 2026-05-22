@@ -25,10 +25,10 @@ By the end of this series, you should:
 
 # How to Use the Tutorials
 
-The tutorials can be launched using the rocket (🚀) button  at the top of the page. 
+The tutorials **with coding examples** can be launched using the rocket (🚀) button  at the top of the page. 
 
 <details>
-<summary> 👇 Expand to see more details  </summary>
+<summary> 🔽 Expand to see more details 🔽 </summary>
 
 ### Option 1 — Google Colab (**recommended**)
 Opens the notebook in Google Colab with the fastest and most reliable experience.
