@@ -84,7 +84,44 @@ At FutureHouse, we're  seeking to accelerate scientific research with an AI agen
 As introduced in chapter 2, [PaperQA2](https://github.com/Future-House/paper-qa) is our scientific information retrieval system. Our data analysis agent is named [Finch](https://github.com/Future-House/finch). Finch is an AI agent framework designed to perform complex scientific data analysis tasks by iteratively working through Jupyter notebooks. This agent takes in datasets and prompts, then systematically explores, analyzes, and interprets the data to provide comprehensive answers and insights. Then we have [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system), our first multi-agent system for scientific discovery. We applied Robin to identify ripasudil, a Rho-kinase (ROCK) inhibitor clinically used to treat glaucoma, as a novel therapeutic candidate for dry age-related macular degeneration (dAMD), a leading cause of irreversible blindness worldwide. The second iteration of Robin, named [Kosmos](https://edisonscientific.com/articles/announcing-kosmos?gad_source=1&gad_campaignid=23563065812&gbraid=0AAAABB7BYdBNoPj2BU82YRgDuN7FLSbFp&gclid=CjwKCAjwwJzPBhBREiwAJfHRnZ_daxcLWR4IyY7swufHvUA5GBDm-dNoDpG-gSJng_9pe96pNd0ciBoCT7wQAvD_BwE), is our first AI scientist. The core innovation in Kosmos is the use of structured world models, which allow efficient incorporation of information extracted over hundreds of agent trajectories. This also allows the agent to maintain coherence towards a specific research objective over tens of millions of tokens. 
 
 
-## 3.1.4 Additional Reading
+## 3.1.4 Limitations of AI Agents
+
+AI agents are comparatively better at performing domain specific tasks than LLMs by themselves. However, this is does **not** mean they are free of limitations. Let's take a look some limitations AI agents face.
+
+* **Context window constraints** LLMs have a finite context window. In multi-step agentic workflows, the accumulated message history — including tool calls, observations, and reasoning — can quickly approach or exceed this limit. When truncation occurs, the agent loses access to earlier reasoning, which can cause it to repeat steps, contradict itself, or fail entirely.
+
+* **No memory across runs**  By default, agents have no memory between runs. Each new rollout starts from scratch. In other words, the `DemoEnvState` is ephemeral. Once a rollout ends, nothing persists. If we wanted the agent to learn from prior protein analyses, we'd need to add external memory (e.g., a vector store or a structured cache).
+
+*  **Hallucination and unreliable tool outputs** LLMs can generate plausible-sounding but factually incorrect content, especially when answering questions outside their training data or when tool outputs are ambiguous. For example `handle_tool_exc=True` in `step()` method catches tool exceptions and converts them to messages rather than crashing. This is safe, but the agent may not recover gracefully. It might keep retrying a broken tool or hallucinate a result.
+
+* **Error propagation across steps** Agents take sequential actions, so an early mistake; a wrong tool choice, a misinterpreted observation, or a malformed argument can cascade through subsequent steps and compound into a larger failure. Errors are not always recoverable, especially if the agent lacks explicit error-handling logic.
+
+* **Incomplete or premature termination** Agents driven by a fixed step budget may terminate before completing a task, or may call a termination tool too early because the LLM misjudges task completion. Conversely, without a step limit, agents can loop indefinitely on unsolvable tasks.
+
+*  **Limited generalization across tasks** Agents are sensitive to how tools are described and how prompts are framed. A system prompt or tool description that works well for one task may perform poorly on a slightly different one. Agents often lack the robustness to handle out-of-distribution inputs gracefully.
+
+### Mitigations & Performance Improvements
+
+| Limitation | Mitigation|
+| --- | --- |
+| Context overflow| Summarize or compress old messages; use sliding window memory; set output length limits on tool responses |
+| No persistent memory |  memoryAdd a vector store or structured cache to persist and retrieve results across runs |
+| Hallucination | Ground LLM outputs with retrieval (RAG); require citations; use tool outputs as the source of truth over model priors |
+| Error propagation | Add explicit error handling and retry logic; validate tool inputs/outputs before passing them downstream |
+| Premature/no termination | Check for termination signals after every step; set sensible step budgets based on task complexity|
+| Poor generalization | Invest in prompt engineering and tool description clarity; test on diverse inputs; use few-shot examples in the system prompt |
+
+### Evaluating agent performance 
+
+This is as important as building the agent itself. Rather than just inspecting final outputs, consider:
+
+- Trajectory analysis: did the agent take the most efficient path, or did it waste steps?
+- Tool use accuracy: did it call the right tools with valid arguments?
+- Failure mode logging: track when and why agents fail to complete tasks, to guide future improvements
+
+Frameworks like LDP and Aviary are designed with evaluation in mind: trajectories are structured objects you can analyze programmatically, making it straightforward to build automated eval pipelines on top of your existing rollout infrastructure.
+
+## 3.1.5 Additional Reading
 - More mathematical explanations can be found in this paper: [Aviary: training language agents on challenging scientific tasks](https://arxiv.org/abs/2412.21154)
 - [AI Agents - IBM tutorials](https://www.ibm.com/think/topics/ai-agents)
 
