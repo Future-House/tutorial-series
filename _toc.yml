@@ -24,4 +24,5 @@ parts:
   - caption: "4. Resources"
     chapters:
       - file: resources/glossary
+      - file: resources/python_basics
       - file: resources/submit

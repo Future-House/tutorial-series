@@ -16,7 +16,7 @@ The accompanying `python notebooks` provide step-by-step implementations that re
 
 :::{admonition} 🚀 How to run the notebooks
 
-Tutorials with coding example can be launched using the rocket (🚀) button at the top of the page.
+Tutorials with coding examples can be launched using the rocket (🚀) button at the top of the page.
 
 ### Option 1 — Google Colab (**recommended**)
 Opens the notebook in Google Colab with the fastest and most reliable experience.
