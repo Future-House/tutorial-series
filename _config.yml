@@ -32,6 +32,7 @@ sphinx:
 
 html:
   use_edit_page_button: false
+  google_analytics_id: G-64Q5VQ0KM0
   favicon: figures/FutureHouse-Logo.png
   extra_css:
     - _static/custom.css
