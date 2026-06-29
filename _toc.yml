@@ -4,25 +4,25 @@ root: index
 parts:
   - caption: "1. Introduction"
     chapters:
-      - file: chapter_1/background
-      - file: chapter_1/models_in_ai
-      - file: chapter_1/llms_in_biology
+      - file: chapter_1/1.1.background
+      - file: chapter_1/1.2.models_in_ai
+      - file: chapter_1/1.3.llms_in_biology
 
   - caption: "2. Applications of AI in Biology"
     chapters:
-      - file: chapter_2/background
-      - file: chapter_2/llms_for_biology
-      - file: chapter_2/uniprot_example
+      - file: chapter_2/2.1.background
+      - file: chapter_2/2.2.llms_for_biology.ipynb
+      - file: chapter_2/2.3.external_databases.ipynb
 
   - caption: "3. LLM Agents"
     chapters:
-      - file: chapter_3/agents
-      - file: chapter_3/aviary_agent_implementation
-      - file: chapter_3/agent_implementation
-      - file: chapter_3/agent_mcp_example
+      - file: chapter_3/3.1.agents
+      - file: chapter_3/3.2.aviary_agent_implementation
+      - file: chapter_3/3.3.ant_agent_implementation
+      - file: chapter_3/3.4.agent_mcp_example
 
   - caption: "4. Resources"
     chapters:
-      - file: resources/glossary
-      - file: resources/python_basics
-      - file: resources/submit
+      - file: resources/4.1.glossary
+      - file: resources/4.2.python_basics
+      - file: resources/4.3.submit_work
