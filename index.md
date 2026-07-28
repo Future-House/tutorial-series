@@ -4,7 +4,7 @@ The goal of this FutureHouse tutorial series is to help scientists use AI as a p
 
 This course aims to close that gap by helping you become comfortable with AI: what it is, how it works at a conceptual level, and how it can support your research.
 
-Rather than treating AI as a mysterious black box, we will approach it as a set of statistical tools built on assumptions and data. With a basic understanding, you can evaluate AI methods, question the outputs, and apply them thoughtfully in scientific work.
+Rather than treating AI as a mysterious black box, we will approach it as a set of statistical tools built on assumptions and data. With a basic understanding, you can evaluate AI agent methods, question the outputs, and apply them thoughtfully in scientific work.
 
 # Target Audience
 
