@@ -4,9 +4,7 @@ root: index
 parts:
   - caption: "1. Introduction"
     chapters:
-      - file: chapter_1/1.1.background
-      - file: chapter_1/1.2.models_in_ai
-      - file: chapter_1/1.3.llms_in_biology
+      - file: chapter_1/1.1.A Brief Guide to AI History and References
 
   - caption: "2. Applications of AI in Biology"
     chapters:
