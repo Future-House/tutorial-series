@@ -4,7 +4,7 @@ root: index
 parts:
   - caption: "1. Introduction"
     chapters:
-      - file: chapter_1/1.1.A Brief Guide to AI History and References
+      - file: chapter_1/1.ai_history_references.md
 
   - caption: "2. Applications of AI in Biology"
     chapters:
